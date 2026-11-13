@@ -1,0 +1,15 @@
+name: Shared library consumers
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  hunter:
+    name: Hunter candidate
+    uses: mikevan/Hunter/.github/workflows/ci.yml@main
+    with:
+      product_ref: main
+      candidate_repository: LayerTime-C5
+      candidate_revision: ${{ github.sha }}
