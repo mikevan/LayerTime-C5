@@ -1,5 +1,9 @@
 # LayerTime-C5
 
+Affordable field tools should be reproducible and maintainable. LayerTime-C5 exists to let products share reliable board support without repeatedly rebuilding the same hardware plumbing.
+
+That shared foundation helps keep portable field tools accessible and maintainable. This library handles the board; capture, interpretation, evidence retention, and warning remain product responsibilities.
+
 Shared LilyGO T-Dongle-C5 board support used by Hunter and the legacy fox-hunt
 beacon. This library owns the tested board pin map, SPI display and LED drivers,
 logo bitmaps, button/identity logic and the SD chip-select boot precaution.
